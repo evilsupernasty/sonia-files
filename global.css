@@ -1,1 +1,556 @@
+:root {
+    /* primary colours */
+    --color-blue: #060d87;
+    --color-gold: #f4b142;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    /* secondary colours */
+    --color-deep-blue: #000044;
+    --color-true-blue: #317bff;
+    --color-digital-blue: #0000ff;
+    --color-sky: #daebfc;
+    --color-deep-gold: #ee8a07;
+    --color-true-yellow: #ffde46;
+    --color-digital-yellow: #ffff00;
+    --color-ivory: #fbf9ed;
+}
 
+@font-face {
+    font-weight: 400;
+    descent-override: 15%;
+    ascent-override: 89%;
+    font-family: "wickliffe-sans";
+    font-style: normal;
+    src: url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeSansWEB-Regular..woff2) format("woff2"), url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeSansWEB-Regular..woff) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-weight: 400;
+    descent-override: 15%;
+    ascent-override: 89%;
+    font-family: "wickliffe-sans";
+    font-style: italic;
+    src: url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeSansWEB-Italic..woff2) format("woff2"), url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeSansWEB-Italic..woff) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-weight: 700;
+    descent-override: 15%;
+    ascent-override: 89%;
+    font-family: "wickliffe-sans";
+    font-style: normal;
+    src: url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeSansWEB-Medium..woff2) format("woff2"), url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeSansWEB-Medium..woff) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-weight: 700;
+    descent-override: 15%;
+    ascent-override: 89%;
+    font-family: "wickliffe-sans";
+    font-style: italic;
+    src: url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeSansWEB-MediumItalic..woff2) format("woff2"), url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeSansWEB-MediumItalic..woff) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "wickliffe-serif";
+    font-style: normal;
+    src: url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeWEB-Regular..woff2) format("woff2"), url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeWEB-Regular..woff) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "wickliffe-serif";
+    font-style: normal;
+    src: url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeWEB-Regular..woff2) format("woff2"), url(https://www.otago.ac.nz/__data/assets/git_bridge/0013/1363/dist/mysource_files/WickliffeWEB-Regular..woff) format("woff");
+    font-display: swap
+}
+
+body {
+    margin: 0px;
+    font-family: wickliffe-sans, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#HomepageSchoolList {
+    display: none;
+}
+
+.CenterInnerDiv {
+    display: block;
+}
+
+p {
+    text-align: top
+}
+
+.header {
+    background-color: var(--color-blue);
+    background-size: 250px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 120px;
+}
+
+.header-inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.uo-logo {
+    float: left;
+    margin-right: 30px;
+}
+
+.header .header-title h1 {
+    float: left;
+}
+
+.header .sonia-logo {
+    float: right;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: left;
+    font-family: wickliffe-serif, serif;
+    font-size: 35px;
+    line-height: 1.05;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+/*
+h1:before {
+background: #f9c000;
+content: '';
+display: block;
+height: 3px;
+  margin-top: 0px;
+width: 47px;
+}
+*/
+h2 {
+    color: rgb(84, 142, 213);
+    font-weight: bold;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+h3 {
+    color: rgb(84, 142, 213);
+    vertical-align: middle;
+}
+
+.header h1 {
+    color: var(--color-white);
+    line-height: 1;
+}
+
+.header h1 span {
+    color: var(--color-gold);
+    font-size: 24px;
+}
+
+.content-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+}
+
+.content-container h2 {
+    color: var(--color-deep-blue);
+    font-family: wickliffe-serif, serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.05;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.content-container h3 {
+    color: #333333;
+    font-family: wickliffe-serif, serif;
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.content-container p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.content-container a {
+    color: var(--color-deep-blue);
+    font-weight: 700;
+}
+
+.content-container a:hover {
+    text-decoration: none;
+}
+
+.icon-container {
+    border-top: 5px dotted #dddddd;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 63px;
+    padding-top: 63px;
+}
+
+.icon-container .grid-third {
+    border: 1px solid color;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px #f5f5f5;
+    box-sizing: border-box;
+    font-family: wickliffe-serif, serif;
+    font-size: 25px;
+    margin-bottom: 35px;
+    margin-right: 3.4%;
+    position: relative;
+    transition: all 0.3s ease-out;
+    width: 31%;
+}
+
+.icon-container .grid-third a::after {
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 7px solid #dddddd;
+    border-radius: 50%;
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    height: 140px;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 40px;
+    width: 140px;
+}
+
+.icon-container .grid-third:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.icon-container .grid-third a {
+    display: block;
+    line-height: 1.2;
+    padding: 205px 28px 30px 28px;
+    text-align: center;
+}
+
+.icon-container .education a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/education-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .pharmacy a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/pharmacy-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .physiotherapy a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/physio-icon.svg);
+    background-size: 120px 120px;
+}
+
+.icon-container .dentistry a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/dental-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .medicine a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/medicine-icon.svg);
+    background-size: 96px 96px;
+}
+
+.icon-container .psychology a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/psychology-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .pe a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/physical-education-icon.svg);
+    background-size: 120px 120px;
+}
+
+.icon-container .business a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/business-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .dietetics a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/human-nutrition-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .nursing a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/nursing-studies-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .social a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/social-sciences-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .radiation a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/radiation-therapy-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .phd a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/phd-travel-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .medlab a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/med-lab-sci-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .shift a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/information-science-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .comms a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/science-communication-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .humanities a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/humanities-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .careers a::after {
+    background-image: url(https://www.otago.ac.nz/_assets/_gfx/app-icons/sonia/career-development-centre-icon.svg);
+    background-size: 100px 100px;
+}
+
+.icon-container .grid-third:hover {
+    background-color: var(--color-blue);
+}
+
+.icon-container .grid-third:hover a {
+    color: var(--color-white);
+}
+
+.icon-container .grid-third:hover a::after {
+    background-color: var(--color-true-blue);
+    border: 7px solid var(--color-sky);
+}
+
+.CenterInnerDiv.defaultCultureBox {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#Footer {
+    background: #f5f5f5;
+    border-top: 1px solid #dddddd;
+}
+
+.footer-inner {
+    padding-bottom: 50px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+}
+
+
+@media only screen and (min-width: 1500px) {
+    .header-inner {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1405px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+
+    .header-inner,
+    .content-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+
+@media only screen and (max-width: 630px) {
+    .header {
+        height: 160px;
+        float: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .header-inner {
+        margin-top: -8px;
+        padding: 0;
+    }
+
+    .uo-logo {
+        background: url(https://www.otago.ac.nz/_assets/_gfx/home-button@2x.png) no-repeat 0 0;
+        background-size: 52px;
+        float: none;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    .uo-logo img {
+        visibility: hidden;
+        width: 100px !important;
+    }
+
+    .header .header-title h1 {
+        margin-top: 0px;
+    }
+
+    .icon-container .grid-third {
+        margin-bottom: 21px;
+        width: 47%;
+    }
+
+    .icon-container .grid-third:nth-of-type(3n) {
+        margin-right: 3.4%;
+    }
+
+    .icon-container .grid-third:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    .icon-container .grid-third a {
+        padding-top: 170px;
+    }
+
+    .sonia-logo {
+        display: none;
+    }
+
+    .icon-container .grid-third a::after {
+        top: 20px;
+    }
+
+    .icon-container .grid-third.education {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.pharmacy {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.physiotherapy {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.dentistry {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.medicine {
+        background-position: center 55px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.psychology {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.pe {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.business {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.nutrition {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.nursing {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.social {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.radiation {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.phd {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.medlab {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.shift {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+
+    .icon-container .grid-third.comms {
+        background-position: center 50px;
+        background-size: 80px 80px;
+    }
+}
+
+
+
+@media only screen and (max-width: 380px) {
+    .icon-container .grid-third a {
+        font-size: 23px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 155px;
+    }
+
+    .icon-container .grid-third a::after {
+        border: 7px solid #dddddd;
+        border-radius: 50%;
+        box-sizing: border-box;
+        content: '';
+        display: block;
+        height: 110px;
+        position: absolute;
+        left: calc(50% - 55px);
+        top: 30px;
+        width: 110px;
+    }
+}
